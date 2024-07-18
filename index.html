@@ -3,146 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>Total Knee Replacement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="page-loader" class="loader"></div>
+    <div id="page-loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header with top bar -->
     <header>
-        <nav>
-            <div class="logo">LOGO</div>
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="banner-section">
+        <div class="top-bar">
             <div class="container">
-                <div class="banner-content">
-                    <h1>Banner Content</h1>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <button>Enquire Now</button>
+                <div class="top-left">
+                    <div class="logo">
+                        <img src="images/dummy1.jpeg" alt="Logo">
+                    </div>
                 </div>
-                <div class="banner-image">
-                    <img src="images/image4.jpeg" alt="Replacement" class="lazy">
-                </div>
-            </div>
-        </section>
-        <section class="form-section">
-            <div class="container">
-                <h2>Need Help?</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </section>
-        <section class="background-section">
-            <div class="owl-carousel owl-theme">
-                <div class="item"><img src="images/image5.jpeg" alt="Image 1" class="lazy"></div>
-                <div class="item"><img src="images/image6.jpg" alt="Image 2" class="lazy"></div>
-                <div class="item"><img src="images/dummy7.jpeg" alt="Image 3" class="lazy"></div>
-            </div>
-        </section>
-        <section class="content-section">
-            <div class="container">
-                <br>
-                <h2>Container 1</h2>
-                <p>Content about container...</p>
-                <br>
-                <h2>Container 2</h2>
-                <p>Content about container...</p>
-                <br>
-            </div>
-        </section>
-        <section class="testimonials-section">
-            <div class="container">
-                <h2>Customer Stories & Videos</h2>
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="testimonial">
-                            <p>Testimonial content...</p>
-                            <p><strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</strong><br>New York, USA</p>
+                <div class="top-right">
+                    <span>Second Medical Opinion&nbsp;<br>
+                        <a href="#">Book Consultation</a>
+                    </span>
+                    <span>Call Us On<br>
+                        <a href="tel:9858962222">985 896 2222</a>
+                    </span>
+                    <span>Email Us At<br>
+                        <a href="mailto:info@test.com">info@test.com</a>
+                        <!-- Dropdown for country/language selection -->
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <img src="images/india-flag.png" alt="India Flag">
+                                <i class="fas fa-angle-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Country 1</a>
+                                <a href="#">Country 2</a>
+                                <a href="#">Country 3</a>
+                                <!-- Add more countries/languages as needed -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial">
-                            <p>Testimonial content...</p>
-                            <p><strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</strong><br>New York, USA</p>
-                        </div>
-                    </div>
+                    </span>
                 </div>
             </div>
-        </section>
-        <section class="developer-section">
-            <div class="container">
-                <h2>Top Developers</h2>
-                <div class="developer-cards">
-                    <div class="developer-card">
-                        <img src="images/dummy4.png" alt="Developer 1">
-                        <p>Firstname Lastname<br>Designation</p>
-                    </div>
-                    <div class="developer-card">
-                        <img src="images/dummy5.jpeg" alt="Developer 2">
-                        <p>Firstname Lastname<br>Designation</p>
-                    </div>
-                    <div class="developer-card">
-                        <img src="images/dummy6.png" alt="Developer 3">
-                        <p>Firstname Lastname<br>Designation</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="location-section">
-            <div class="container">
-                <h2>Office Locations</h2>
-                <div class="location-cards">
-                    <div class="location-card">
-                        <img src="images/dummy1.jpeg" alt="location 1">
-                        <p>A Location</p>
-                    </div>
-                    <div class="location-card">
-                        <img src="images/dummy2.jpeg" alt="location 2">
-                        <p>M Location</p>
-                    </div>
-                    <div class="location-card">
-                        <img src="images/dummy3.jpeg" alt="location 3">
-                        <p>J Location</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
+        </div>
         <div class="container">
-            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <!-- Navigation bar with search -->
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Treatments</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Hospitals</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Request a Quote</a></li>
+                </ul>
+                <div class="search-bar">
+                    <form>
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Enquiry section with banner image -->
+    <section class="hero">
+        <div class="banner-image">
+            <img src="images/dummy6.png" alt="Replacement" class="lazy">
+        </div>
+        <div class="container">
+            <h1>Total Knee Replacement</h1>
+            <p>With total replacement & complex surgeries, we'll keep you away from damage and help you with a successful joint.</p>
+            <a href="#" class="btn">Enquire Now</a>
+        </div>
+    </section>
+    
+
+    <!-- Overview section -->
+    <section class="select">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#overview-1">Treatment Overview</a></li>
+                    <li><a href="#overview-2">Eligibility</a></li>
+                    <li><a href="#overview-3">Preparation</a></li>
+                    <li><a href="#overview-4">FAQS</a></li>
+                    <li><a href="#overview-5">Patient Stories & Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- <section class="form-section">
+        <div class="container">
+            <h2>Need Help?</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section> -->
+
+    <!-- Content section with treatment overviews -->
+    <section id="overview-1" class="content-section">
+        <div class="container">
+            <h2>Treatment Overview </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non metus ac leo convallis ullamcorper.</p>
+            <div class="banner-image">
+                <img src="images/dummy6.png" alt="Replacement" class="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="overview-2" class="content-section">
+        <div class="container">
+            <h2>Eligibility</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non metus ac leo convallis ullamcorper.</p>
+        </div>
+    </section>
+
+    <section id="overview-3" class="content-section">
+        <div class="container">
+            <h2>Preparation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non metus ac leo convallis ullamcorper.</p>
+        </div>
+    </section>
+
+    <section id="overview-4" class="content-section">
+        <div class="container">
+            <h2>FAQs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non metus ac leo convallis ullamcorper.</p>
+        </div>
+    </section>
+
+    <section id="overview-5" class="content-section">
+        <div class="container">
+            <section class="testimonials">
+                <div class="container">
+                    <h2>Patient Stories & Videos</h2>
+                    <div class="owl-carousel owl-theme">
+                        <div class="testimonial-item">
+                            <div class="card">
+                                <div class="card-content">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non metus ac leo convallis ullamcorper."</p>
+                                    <p>- Luke Olfert</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more testimonial items as needed -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <!-- Doctors section -->
+    <section class="doctors">
+        <div class="container">
+            <h2>Top Orthopaedic Doctors</h2>
+            <div class="doctor-cards">
+                <div class="doctor-card">
+                    <img src="images/dummy4.png" alt="Doctor 1">
+                    <p>Dr. John Doe</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="images/dummy4.png" alt="Doctor 1">
+                    <p>Dr. John Doe</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="images/dummy4.png" alt="Doctor 1">
+                    <p>Dr. John Doe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended hospitals section -->
+    <section class="hospitals">
+        <div class="container">
+            <h2>Recommended Hospitals</h2>
+            <div class="hospital-cards">
+                <div class="hospital-card">
+                    <img src="images/dummy1.jpeg" alt="Hospital 1">
+                    <p>Apollo Hospital</p>
+                </div>
+                <div class="hospital-card">
+                    <img src="images/dummy1.jpeg" alt="Hospital 1">
+                    <p>Apollo Hospital</p>
+                </div>
+                <div class="hospital-card">
+                    <img src="images/dummy1.jpeg" alt="Hospital 1">
+                    <p>Apollo Hospital</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company details section -->
+    <section class="company-details">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non metus ac leo convallis ullamcorper.</p>
+        </div>
+    </section>
+
+    <div class="join-us">
+        <a href="#" class="join-btn">Join Us</a>
+    </div>
+
+    <!-- Useful links section -->
+    <section class="useful-links">
+        <div class="container">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aafiya Medi Treats. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
