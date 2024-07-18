@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <div id="page-loader" class="loader"></div>
+    <header>
+        <nav>
+            <div class="logo">LOGO</div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner-section">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>Banner Content</h1>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <button>Enquire Now</button>
+                </div>
+                <div class="banner-image">
+                    <img src="images/image1.jpg" alt="Knee Replacement" class="lazy">
+                </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="container">
+                <h2>Need Help?</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section class="background-section">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="images/image5.jpeg" alt="Image 1" class="lazy"></div>
+                <div class="item"><img src="images/image6.jpg" alt="Image 2" class="lazy"></div>
+                <div class="item"><img src="images/image7.jpeg" alt="Image 3" class="lazy"></div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <br>
+                <h2>Container 1</h2>
+                <p>Content about container...</p>
+                <br>
+                <h2>Container 2</h2>
+                <p>Content about container...</p>
+                <br>
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>Customer Stories & Videos</h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="testimonial">
+                            <p>Testimonial content...</p>
+                            <p><strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</strong><br>New York, USA</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial">
+                            <p>Testimonial content...</p>
+                            <p><strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</strong><br>New York, USA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="developer-section">
+            <div class="container">
+                <h2>Top Developers</h2>
+                <div class="developer-cards">
+                    <div class="developer-card">
+                        <img src="images/image3.jpeg" alt="Developer 1">
+                        <p>Firstname Lastname<br>Designation</p>
+                    </div>
+                    <div class="developer-card">
+                        <img src="images/image3.jpeg" alt="Developer 2">
+                        <p>Firstname Lastname<br>Designation</p>
+                    </div>
+                    <div class="developer-card">
+                        <img src="images/image3.jpeg" alt="Developer 3">
+                        <p>Firstname Lastname<br>Designation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="location-section">
+            <div class="container">
+                <h2>Office Locations</h2>
+                <div class="location-cards">
+                    <div class="location-card">
+                        <img src="images/image4.jpeg" alt="location 1">
+                        <p>A Location</p>
+                    </div>
+                    <div class="location-card">
+                        <img src="images/image4.jpeg" alt="location 2">
+                        <p>M Location</p>
+                    </div>
+                    <div class="location-card">
+                        <img src="images/image4.jpeg" alt="location 3">
+                        <p>J Location</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
