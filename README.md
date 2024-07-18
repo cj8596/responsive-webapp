@@ -6,6 +6,7 @@ This project is a responsive website created using HTML5, CSS, and JavaScript (j
 
 my_website/
 │
+├── Dockerfile
 ├── index.html
 ├── css/
 │ └── style.css
